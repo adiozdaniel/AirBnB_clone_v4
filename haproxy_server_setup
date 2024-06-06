@@ -11,11 +11,11 @@ sudo apt-get -y install haproxy
 # edit config file
 server_config=\
 "
-frontend  happychuks-frontend
+frontend  adioz-frontend
         bind *:80
         mode http
-        default_backend happychuks-backend
-backend happychuks-backend
+        default_backend adioz-backend
+backend adioz-backend
         balance roundrobin
         server 516899-web-01 34.232.52.236:80 check
         server 516899-web-02 54.174.45.21:80 check
